@@ -56,7 +56,7 @@ public class NumberAdapter extends BaseAdapter {
         int number = numbers.get(position);
         textView.setText(String.valueOf(number));
 
-        // Highlight numbers based on the rule
+
         if (highlightedNumbers.contains(number)) {
             textView.setBackgroundColor(ContextCompat.getColor(context, R.color.teal_200));
             textView.setBackground(AppCompatResources.getDrawable(context,R.drawable.grid_item_background_transparent));
